@@ -69,10 +69,18 @@ public enum OperatingSystem {
 	
 	// for Google user-agent, see https://developer.chrome.com/multidevice/user-agent
 	ANDROID(		Manufacturer.GOOGLE,null, 0, "Android", new String[] { "Android" },  new String[] {"Ubuntu"}, DeviceType.MOBILE, null ),
-		ANDROID8(		Manufacturer.GOOGLE,OperatingSystem.ANDROID, 8, "Android 8.x", new String[] { "Android 8", "Android-8" },   new String[] { "glass" }, DeviceType.MOBILE, null ),
-        ANDROID8_TABLET(Manufacturer.GOOGLE,OperatingSystem.ANDROID8, 80, "Android 8.x Tablet", new String[] { "Android 8", "Android-8"}, new String[] { "mobile", "glass"}, DeviceType.TABLET, null ),
-		ANDROID7(		Manufacturer.GOOGLE,OperatingSystem.ANDROID, 7, "Android 7.x", new String[] { "Android 7", "Android-7" },   new String[] { "glass" }, DeviceType.MOBILE, null ),
-        ANDROID7_TABLET(Manufacturer.GOOGLE,OperatingSystem.ANDROID7, 70, "Android 7.x Tablet", new String[] { "Android 7", "Android-7"}, new String[] { "mobile", "glass"}, DeviceType.TABLET, null ),
+
+	ANDROID10(		Manufacturer.GOOGLE , OperatingSystem.ANDROID , 1000 ,"Android 10.x" ,new String[]{"Android 10" ,"Android-10"}, new String[]{"glass"},DeviceType.MOBILE ,null),
+	ANDROID10_TABLET(Manufacturer.GOOGLE , OperatingSystem.ANDROID , 1001 ,"Android 10.x Tablet" ,new String[]{"Android 10" ,"Android-10"}, new String[]{"mobile glass"},DeviceType.TABLET,null),
+	ANDROID9(		Manufacturer.GOOGLE , OperatingSystem.ANDROID , 900 ,"Android 9.x" ,new String[]{"Android 9" ,"Android-9"}, new String[]{"glass"},DeviceType.MOBILE ,null),
+	ANDROID9_TABLET(Manufacturer.GOOGLE , OperatingSystem.ANDROID , 901 ,"Android 9.x Tablet" ,new String[]{"Android 9" ,"Android-9"}, new String[]{"mobile glass"},DeviceType.TABLET ,null),
+	ANDROID8(		Manufacturer.GOOGLE , OperatingSystem.ANDROID , 800 ,"Android 8.x" ,new String[]{"Android 8" ,"Android-8"}, new String[]{"glass"},DeviceType.MOBILE ,null),
+	ANDROID8_TABLET(Manufacturer.GOOGLE , OperatingSystem.ANDROID , 801 ,"Android 8.x Tablet" ,new String[]{"Android 8" ,"Android-8"}, new String[]{"mobile glass"},DeviceType.TABLET ,null),
+	ANDROID7(		Manufacturer.GOOGLE , OperatingSystem.ANDROID , 700 ,"Android 7.x" ,new String[]{"Android 7" ,"Android-7"}, new String[]{"glass"},DeviceType.MOBILE ,null),
+	ANDROID7_TABLET(Manufacturer.GOOGLE,OperatingSystem.ANDROID7, 701, "Android 7.x Tablet", new String[] { "Android 7", "Android-7"}, new String[] { "mobile", "glass"}, DeviceType.TABLET, null ),
+
+
+
 		ANDROID6(		Manufacturer.GOOGLE,OperatingSystem.ANDROID, 6, "Android 6.x", new String[] { "Android 6", "Android-6" },   new String[] { "glass" }, DeviceType.MOBILE, null ),
         ANDROID6_TABLET(Manufacturer.GOOGLE,OperatingSystem.ANDROID6, 60, "Android 6.x Tablet", new String[] { "Android 6", "Android-6"}, new String[] { "mobile", "glass"}, DeviceType.TABLET, null ),
         ANDROID5(		Manufacturer.GOOGLE,OperatingSystem.ANDROID, 5, "Android 5.x", new String[] { "Android 5", "Android-5" },   new String[] { "glass" }, DeviceType.MOBILE, null ),
@@ -108,10 +116,42 @@ public enum OperatingSystem {
 	 * iOS4, with the release of the iPhone 4, Apple renamed the OS to iOS.
 	 */	
 	IOS(			Manufacturer.APPLE,null, 2, "iOS", new String[] { "iPhone", "like Mac OS X" },  null, DeviceType.MOBILE, null ), // before MAC_OS_X_IPHONE for all older versions
-		iOS11_IPHONE(	Manufacturer.APPLE,OperatingSystem.IOS, 92, "iOS 11 (iPhone)", new String[] { "iPhone OS 11" },  null, DeviceType.MOBILE, null ), // before MAC_OS_X_IPHONE for all older versions
-		iOS10_IPHONE(	Manufacturer.APPLE,OperatingSystem.IOS, 91, "iOS 10 (iPhone)", new String[] { "iPhone OS 10" },  null, DeviceType.MOBILE, null ), // before MAC_OS_X_IPHONE for all older versions
-		iOS9_IPHONE(	Manufacturer.APPLE,OperatingSystem.IOS, 90, "iOS 9 (iPhone)", new String[] { "iPhone OS 9" },  null, DeviceType.MOBILE, null ), // before MAC_OS_X_IPHONE for all older versions
-		iOS8_4_IPHONE(	Manufacturer.APPLE,OperatingSystem.IOS, 49, "iOS 8.4 (iPhone)", new String[] { "iPhone OS 8_4" },  null, DeviceType.MOBILE, null ), // before MAC_OS_X_IPHONE for all older versions
+
+	iOS14_IPHONE(	Manufacturer.APPLE,OperatingSystem.IOS, 95, "iOS 14 (iPhone)", new String[] { "iPhone OS 14" },  null, DeviceType.MOBILE, null ), // before MAC_OS_X_IPHONE for all older versions
+
+	iOS13_6_IPHONE(	Manufacturer.APPLE,OperatingSystem.IOS, 946, "iOS 13.6 (iPhone)", new String[] { "iPhone OS 13_6" },  null, DeviceType.MOBILE, null ), // before MAC_OS_X_IPHONE for all older versions
+	iOS13_5_IPHONE(	Manufacturer.APPLE,OperatingSystem.IOS, 945, "iOS 13.5 (iPhone)", new String[] { "iPhone OS 13_5" },  null, DeviceType.MOBILE, null ), // before MAC_OS_X_IPHONE for all older versions
+	iOS13_4_IPHONE(	Manufacturer.APPLE,OperatingSystem.IOS, 944, "iOS 13.4 (iPhone)", new String[] { "iPhone OS 13_4" },  null, DeviceType.MOBILE, null ), // before MAC_OS_X_IPHONE for all older versions
+	iOS13_3_IPHONE(	Manufacturer.APPLE,OperatingSystem.IOS, 943, "iOS 13.3 (iPhone)", new String[] { "iPhone OS 13_3" },  null, DeviceType.MOBILE, null ), // before MAC_OS_X_IPHONE for all older versions
+	iOS13_2_IPHONE(	Manufacturer.APPLE,OperatingSystem.IOS, 942, "iOS 13.2 (iPhone)", new String[] { "iPhone OS 13_2" },  null, DeviceType.MOBILE, null ), // before MAC_OS_X_IPHONE for all older versions
+	iOS13_1_IPHONE(	Manufacturer.APPLE,OperatingSystem.IOS, 941, "iOS 13.1 (iPhone)", new String[] { "iPhone OS 13_1" },  null, DeviceType.MOBILE, null ), // before MAC_OS_X_IPHONE for all older versions
+	iOS13_IPHONE(	Manufacturer.APPLE,OperatingSystem.IOS, 94, "iOS 13 (iPhone)", new String[] { "iPhone OS 13" },  null, DeviceType.MOBILE, null ), // before MAC_OS_X_IPHONE for all older versions
+
+	iOS12_4_IPHONE(	Manufacturer.APPLE,OperatingSystem.IOS, 934, "iOS 12.4 (iPhone)", new String[] { "iPhone OS 12_4" },  null, DeviceType.MOBILE, null ), // before MAC_OS_X_IPHONE for all older versions
+	iOS12_3_IPHONE(	Manufacturer.APPLE,OperatingSystem.IOS, 933, "iOS 12.3 (iPhone)", new String[] { "iPhone OS 12_3" },  null, DeviceType.MOBILE, null ), // before MAC_OS_X_IPHONE for all older versions
+	iOS12_2_IPHONE(	Manufacturer.APPLE,OperatingSystem.IOS, 932, "iOS 12.2 (iPhone)", new String[] { "iPhone OS 12_2" },  null, DeviceType.MOBILE, null ), // before MAC_OS_X_IPHONE for all older versions
+	iOS12_1_IPHONE(	Manufacturer.APPLE,OperatingSystem.IOS, 931, "iOS 12.1 (iPhone)", new String[] { "iPhone OS 12_1" },  null, DeviceType.MOBILE, null ), // before MAC_OS_X_IPHONE for all older versions
+	iOS12_IPHONE(	Manufacturer.APPLE,OperatingSystem.IOS, 93, "iOS 12 (iPhone)", new String[] { "iPhone OS 12" },  null, DeviceType.MOBILE, null ), // before MAC_OS_X_IPHONE for all older versions
+
+	iOS11_4_IPHONE(	Manufacturer.APPLE,OperatingSystem.IOS, 924, "iOS 11.4 (iPhone)", new String[] { "iPhone OS 11_4" },  null, DeviceType.MOBILE, null ), // before MAC_OS_X_IPHONE for all older versions
+	iOS11_3_IPHONE(	Manufacturer.APPLE,OperatingSystem.IOS, 923, "iOS 11.3 (iPhone)", new String[] { "iPhone OS 11_3" },  null, DeviceType.MOBILE, null ), // before MAC_OS_X_IPHONE for all older versions
+	iOS11_2_IPHONE(	Manufacturer.APPLE,OperatingSystem.IOS, 922, "iOS 11.2 (iPhone)", new String[] { "iPhone OS 11_2" },  null, DeviceType.MOBILE, null ), // before MAC_OS_X_IPHONE for all older versions
+	iOS11_1_IPHONE(	Manufacturer.APPLE,OperatingSystem.IOS, 921, "iOS 11.1 (iPhone)", new String[] { "iPhone OS 11_1" },  null, DeviceType.MOBILE, null ), // before MAC_OS_X_IPHONE for all older versions
+	iOS11_IPHONE(	Manufacturer.APPLE,OperatingSystem.IOS, 92, "iOS 11 (iPhone)", new String[] { "iPhone OS 11" },  null, DeviceType.MOBILE, null ), // before MAC_OS_X_IPHONE for all older versions
+
+	iOS10_3_IPHONE(	Manufacturer.APPLE,OperatingSystem.IOS, 913, "iOS 10.3 (iPhone)", new String[] { "iPhone OS 10_3" },  null, DeviceType.MOBILE, null ), // before MAC_OS_X_IPHONE for all older versions
+	iOS10_2_IPHONE(	Manufacturer.APPLE,OperatingSystem.IOS, 912, "iOS 10.2 (iPhone)", new String[] { "iPhone OS 10_2" },  null, DeviceType.MOBILE, null ), // before MAC_OS_X_IPHONE for all older versions
+	iOS10_1_IPHONE(	Manufacturer.APPLE,OperatingSystem.IOS, 911, "iOS 10.1 (iPhone)", new String[] { "iPhone OS 10_1" },  null, DeviceType.MOBILE, null ), // before MAC_OS_X_IPHONE for all older versions
+	iOS10_IPHONE(	Manufacturer.APPLE,OperatingSystem.IOS, 91, "iOS 10 (iPhone)", new String[] { "iPhone OS 10" },  null, DeviceType.MOBILE, null ), // before MAC_OS_X_IPHONE for all older versions
+
+	iOS9_3_IPHONE(	Manufacturer.APPLE,OperatingSystem.IOS, 903, "iOS 9.3 (iPhone)", new String[] { "iPhone OS 9_3" },  null, DeviceType.MOBILE, null ), // before MAC_OS_X_IPHONE for all older versions
+	iOS9_2_IPHONE(	Manufacturer.APPLE,OperatingSystem.IOS, 902, "iOS 9.2 (iPhone)", new String[] { "iPhone OS 9_2" },  null, DeviceType.MOBILE, null ), // before MAC_OS_X_IPHONE for all older versions
+	iOS9_1_IPHONE(	Manufacturer.APPLE,OperatingSystem.IOS, 901, "iOS 9.1 (iPhone)", new String[] { "iPhone OS 9_1" },  null, DeviceType.MOBILE, null ), // before MAC_OS_X_IPHONE for all older versions
+	iOS9_IPHONE(	Manufacturer.APPLE,OperatingSystem.IOS, 90, "iOS 9 (iPhone)", new String[] { "iPhone OS 9" },  null, DeviceType.MOBILE, null ), // before MAC_OS_X_IPHONE for all older versions
+
+
+
+	iOS8_4_IPHONE(	Manufacturer.APPLE,OperatingSystem.IOS, 49, "iOS 8.4 (iPhone)", new String[] { "iPhone OS 8_4" },  null, DeviceType.MOBILE, null ), // before MAC_OS_X_IPHONE for all older versions
 		iOS8_3_IPHONE(	Manufacturer.APPLE,OperatingSystem.IOS, 48, "iOS 8.3 (iPhone)", new String[] { "iPhone OS 8_3" },  null, DeviceType.MOBILE, null ), // before MAC_OS_X_IPHONE for all older versions
 		iOS8_2_IPHONE(	Manufacturer.APPLE,OperatingSystem.IOS, 47, "iOS 8.2 (iPhone)", new String[] { "iPhone OS 8_2" },  null, DeviceType.MOBILE, null ), // version that added Apple Watch support
 		iOS8_1_IPHONE(	Manufacturer.APPLE,OperatingSystem.IOS, 46, "iOS 8.1 (iPhone)", new String[] { "iPhone OS 8_1" },  null, DeviceType.MOBILE, null ), // before MAC_OS_X_IPHONE for all older versions
@@ -121,7 +161,12 @@ public enum OperatingSystem {
 		iOS5_IPHONE(	Manufacturer.APPLE,OperatingSystem.IOS, 42, "iOS 5 (iPhone)", new String[] { "iPhone OS 5" },  null, DeviceType.MOBILE, null ), // before MAC_OS_X_IPHONE for all older versions
 		iOS4_IPHONE(	Manufacturer.APPLE,OperatingSystem.IOS, 41, "iOS 4 (iPhone)", new String[] { "iPhone OS 4" },  null, DeviceType.MOBILE, null ), // before MAC_OS_X_IPHONE for all older versions
 		MAC_OS_X_IPAD(	Manufacturer.APPLE, OperatingSystem.IOS, 50, "Mac OS X (iPad)", new String[] { "iPad" },  null, DeviceType.TABLET, null ), // before Mac OS X
-		iOS11_IPAD(	Manufacturer.APPLE, OperatingSystem.MAC_OS_X_IPAD, 60, "iOS 11 (iPad)", new String[] { "OS 11" },  null, DeviceType.TABLET, null ), // before Mac OS X
+
+	iOS14_IPAD(	Manufacturer.APPLE, OperatingSystem.MAC_OS_X_IPAD, 140, "iOS 14 (iPad)", new String[] { "OS 14" },  null, DeviceType.TABLET, null ), // before Mac OS X
+	iOS13_IPAD(	Manufacturer.APPLE, OperatingSystem.MAC_OS_X_IPAD, 130, "iOS 13 (iPad)", new String[] { "OS 13" },  null, DeviceType.TABLET, null ), // before Mac OS X
+	iOS12_IPAD(	Manufacturer.APPLE, OperatingSystem.MAC_OS_X_IPAD, 120, "iOS 12 (iPad)", new String[] { "OS 12" },  null, DeviceType.TABLET, null ), // before Mac OS X
+
+	iOS11_IPAD(	Manufacturer.APPLE, OperatingSystem.MAC_OS_X_IPAD, 60, "iOS 11 (iPad)", new String[] { "OS 11" },  null, DeviceType.TABLET, null ), // before Mac OS X
 		iOS10_IPAD(	Manufacturer.APPLE, OperatingSystem.MAC_OS_X_IPAD, 59, "iOS 10 (iPad)", new String[] { "OS 10" },  null, DeviceType.TABLET, null ), // before Mac OS X
 		iOS9_IPAD(	Manufacturer.APPLE, OperatingSystem.MAC_OS_X_IPAD, 58, "iOS 9 (iPad)", new String[] { "OS 9" },  null, DeviceType.TABLET, null ), // before Mac OS X
 		iOS8_4_IPAD(	Manufacturer.APPLE, OperatingSystem.MAC_OS_X_IPAD, 57, "iOS 8.4 (iPad)", new String[] { "OS 8_4" },  null, DeviceType.TABLET, null ), // before Mac OS X
@@ -133,7 +178,18 @@ public enum OperatingSystem {
 		iOS6_IPAD(	Manufacturer.APPLE, OperatingSystem.MAC_OS_X_IPAD, 51, "iOS 6 (iPad)", new String[] { "OS 6" },  null, DeviceType.TABLET, null ), // before Mac OS X
 		MAC_OS_X_IPHONE(Manufacturer.APPLE, OperatingSystem.IOS, 40, "Mac OS X (iPhone)", new String[] { "iPhone" },  null, DeviceType.MOBILE, null ), // before Mac OS X
 		MAC_OS_X_IPOD(	Manufacturer.APPLE, OperatingSystem.IOS, 30, "Mac OS X (iPod)", new String[] { "iPod" },  null, DeviceType.MOBILE, null ), // before Mac OS X
-	
+
+	iOS8_4(Manufacturer.APPLE, null, 101, "iOS 8.4", new String[] { "CFNetwork/711.4.6" }, null, DeviceType.MOBILE, null),
+	iOS8_3(Manufacturer.APPLE, null, 102, "iOS 8.3", new String[] { "CFNetwork/711.3.18" }, null, DeviceType.MOBILE, null),
+	iOS8_2(Manufacturer.APPLE, null, 103, "iOS 8.2", new String[] { "CFNetwork/711.2.23" }, null, DeviceType.MOBILE, null),
+	iOS8_1(Manufacturer.APPLE, null, 104, "iOS 8.1", new String[] { "CFNetwork/711.1.16", "CFNetwork/711.1.12" }, null, DeviceType.MOBILE, null),
+	iOS8(Manufacturer.APPLE, null, 105, "iOS 8", new String[] { "CFNetwork/711.0.6" }, null, DeviceType.MOBILE, null),
+	iOS7(Manufacturer.APPLE, null, 106, "iOS 7", new String[] { "CFNetwork/672" }, null, DeviceType.MOBILE, null),
+	iOS6(Manufacturer.APPLE, null, 107, "iOS 6", new String[] { "CFNetwork/609", "CFNetwork/602" }, null, DeviceType.MOBILE, null),
+	iOS5(Manufacturer.APPLE, null, 108, "iOS 5", new String[] { "CFNetwork/548" }, null, DeviceType.MOBILE, null),
+	iOS4(Manufacturer.APPLE, null, 109, "iOS 4", new String[] { "CFNetwork/485" }, null, DeviceType.MOBILE, null),
+
+
 	MAC_OS_X(		Manufacturer.APPLE,null, 10, "Mac OS X", new String[] { "Mac OS X" , "CFNetwork"}, null, DeviceType.COMPUTER, null ), // before Mac	
 
 	/**
