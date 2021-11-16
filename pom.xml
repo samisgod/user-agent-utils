@@ -11,6 +11,8 @@
 	<description>Utility classes to handle user-agents.</description>
 	<properties>
 		<github.global.server>github</github.global.server>
+		<maven.compiler.source>17</maven.compiler.source>
+		<maven.compiler.target>17</maven.compiler.target>
 	</properties>
 	<licenses>
 		<license>

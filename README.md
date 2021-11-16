@@ -10,18 +10,7 @@ https://github.com/HaraldWalker/user-agent-utils/tree/master
 
 EOL WARNING
 -----------
-This library has reached end-of-life and will not see regular updates any longer.
-
-Version 1.21 was the last official release in 2018.
-  
-Pull request with significant feature changes will not get processed.  
-
-If you want to improve this library, fork it and release it yourself.  
-
-As alternative have a look at the Browscap project and its implementations.  
-https://github.com/HaraldWalker/user-agent-utils  
-
-User-agent-utils needed your support
+This library has reached end-of-life. This is a forked version.
 ------------------------------------
 If you used this library for a commercial product, a donation would have been great during the past years.   
  
